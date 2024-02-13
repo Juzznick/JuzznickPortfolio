@@ -1,38 +1,443 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Lalezar&family=Rammetto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miss+Fajardose&display=swap');
+
+
+
+* {
+  font-family: 'PT Sans', sans-serif;
+  font-family: 'Gruppo', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFF5EA;
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(128, 128, 128, 0.175) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.174) 1px, transparent 1px);
+}
+
+.navbar {
+  height: 5vh;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #574e00;
+}
+
+h1 {
+  font-size: 9rem;
+  color: #FFEA30;
+  font-family: 'Jockey One';
+  background-color: transparent;
+  line-height: .8;
   text-align: center;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 0px #000000;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+h2 {
+  color: #FFEA30;
+  font-weight: 100;
+  position: absolute;
+  top: 10rem;
+  background-color: transparent;
+  font-size: 3rem;
+  font-family: "Miss Fajardose";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3 {
+  font-size: 8rem;
+  color: #000000c0;
+  font-weight: 900;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.703);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+
+
+
+.rotating-element {
+  display: none;
+}
+
+
+
+.maindiv-hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+}
+
+.subdiv-hero {}
+
+.subdiv-bento {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bento-elements {
   display: flex;
   flex-direction: column;
+  width: 24%;
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bento-elements img {
+  display: block;
+  object-fit: cover;
+  border-radius: 2rem;
+  transition: 1s ease;
+}
+
+
+
+
+
+
+.maindiv-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  height: 90vh;
+}
+
+.maindiv-project h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.subdiv-project {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.card-project {
+  background-color: #0000000d;
+  height: 20rem;
+  padding: 2rem;
+  margin: 0 1rem 3rem 1rem;
+  border-radius: 0 2rem 0 2rem;
+  box-shadow: 0 8px 32px 0 rgba(135, 31, 133, 0.37);
+  backdrop-filter: blur(1px);
+}
+
+.card-project-2 {
+  box-shadow: 0 8px 32px 0 rgba(54, 98, 211, 0.37);
+}
+
+.card-project-3 {
+  box-shadow: 0 8px 32px 0 rgba(78, 7, 77, 0.37);
+}
+
+.card-project-4 {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+
+.maindiv-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+
+.maindiv-contact h3 {
+  margin-bottom: 4rem;
+}
+
+.subdiv-contact {
+  display: flex;
+  justify-content: center;
+}
+
+.button-cv {
+  color: #000000;
+  background-color: #FFEA30;
+  font-size: 1rem;
+  border-radius: 1rem;
+  padding: .6rem;
+  font-weight: 600;
+}
+
+
+
+
+
+
+.maindiv-aboutme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subdiv-aboutme {
+  display: flex;
+  margin: 0 5rem 0 5rem;
+  justify-content: space-around;
+}
+
+.subdiv-aboutme-sub {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 60%;
 }
 
-.App-link {
-  color: #61dafb;
+.subdiv-aboutme-sub img {
+  max-width: 30vw;
+  border-radius: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.maindiv-aboutme p {
+  font-size: 1.7rem;
+}
+
+
+
+
+
+
+.skills-maindiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.bento-skills-div {
+  display: flex;
+}
+
+.bento-skills-elements img:hover {
+  filter: invert()
+}
+
+.bento-skills-elements {
+  display: flex;
+  flex-direction: column;
+}
+
+.bento-skills-elements img {
+  object-fit: cover;
+}
+
+
+
+
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    transform: translateX(0);
   }
+}
+
+@keyframes fadeIn {
+  0% {
+    filter: blur(5px);
+  }
+
+  100% {
+    filter: blur(0px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+
+  25% {
+    -webkit-transform: rotate3d(0, 0, 1, 90deg);
+    transform: rotate3d(0, 0, 1, 90deg);
+  }
+
+  50% {
+    -webkit-transform: rotate3d(0, 0, 1, 180deg);
+    transform: rotate3d(0, 0, 1, 180deg);
+  }
+
+  75% {
+    -webkit-transform: rotate3d(0, 0, 1, 270deg);
+    transform: rotate3d(0, 0, 1, 270deg);
+  }
+
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 1075px) {
+
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 5rem;
+  }
+
+
+  .fourth-bento {
+    display: none;
+  }
+
+  .maindiv-project h3 {
+    margin-top: 0;
+  }
+
+  .aboutme-sideimg {
+    display: none;
+  }
+
+}
+
+
+
+
+
+
+
+@media (max-width: 950px) {
+  h1 {
+    filter: blur(.2px);
+  }
+
+  h2 {
+    top: 6rem;
+    left: 3rem;
+    color: #FFEA30;
+    z-index: 7;
+    text-shadow: .1px 1px 1px #00000059;
+  }
+
+  h3 {
+    color: #00000055;
+    font-size: 13vw;
+    padding: 2rem 2rem 0 2rem;
+    text-shadow: .1px 1px 4px #00000059;
+  }
+
+  .maindiv-hero {
+    overflow: hidden;
+  }
+
+  .subdiv-hero {
+    z-index: 5;
+  }
+
+  .subdiv-hero-left {
+    padding-left: 1rem;
+    display: none;
+  }
+
+
+  .subdiv-bento {
+    justify-content: center;
+  }
+
+  .first-bento {
+    z-index: 3;
+    width: 20rem;
+    animation: 2s ease 0s 1 fadeIn;
+  }
+
+  .second-bento {
+    z-index: 2;
+    animation: 2s ease-out 0s 1 slideInRight;
+  }
+
+  .third-bento {
+    display: none;
+  }
+
+  .fourth-bento {
+    display: none;
+  }
+
+  .subdiv-hero-right {
+    display: none;
+  }
+
+  .rotating-element {
+    position: absolute;
+    width: 10%;
+    display: flex;
+    justify-content: right;
+    z-index: 6;
+    padding: 0;
+    left: 3.5rem;
+  }
+
+  .rotating-element img {
+    animation: rotate 80s normal linear infinite;
+  }
+
+
+  .subdiv-aboutme {
+    margin: 0 1rem 0 1rem;
+  }
+
+  .maindiv-project h3 {
+    margin-bottom: 1rem;
+  }
+
+  .maindiv-contact h3 {
+    margin-bottom: 1rem;
+  }
+
+  .maindiv-aboutme h3 {
+    margin-bottom: 1rem;
+  }
+
+  .maindiv-aboutme p {
+    font-size: .9rem;
+  }
+
 }
