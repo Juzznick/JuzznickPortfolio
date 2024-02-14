@@ -51,13 +51,12 @@ h1 {
 
 
 h2 {
-  color: #FFEA30;
-  font-weight: 100;
+  color: #ffffff;
+  font-weight: 1000;
   position: absolute;
   top: 10rem;
   background-color: transparent;
   font-size: 3rem;
-  font-family: "Miss Fajardose";
 }
 
 h3 {
@@ -78,6 +77,9 @@ p {
   color: #000000;
 }
 
+span {
+  font-weight: 900;
+}
 
 
 
@@ -86,6 +88,9 @@ p {
 }
 
 
+.maindiv-hero h2 {
+  display: none;
+}
 
 .maindiv-hero {
   display: flex;
@@ -332,9 +337,6 @@ p {
     margin-top: 0;
   }
 
-  .aboutme-sideimg {
-    display: none;
-  }
 
 }
 
@@ -345,6 +347,8 @@ p {
 
 
 @media (max-width: 950px) {
+
+
   h1 {
     filter: blur(.2px);
   }
@@ -355,17 +359,26 @@ p {
     color: #FFEA30;
     z-index: 7;
     text-shadow: .1px 1px 1px #00000059;
+    display: none;
   }
 
   h3 {
     color: #00000055;
     font-size: 13vw;
-    padding: 2rem 2rem 0 2rem;
+    padding: 1rem 2rem 0 2rem;
     text-shadow: .1px 1px 4px #00000059;
   }
 
+
+  .subdiv-aboutme {
+    display: block;
+  }
+
+
+
   .maindiv-hero {
     overflow: hidden;
+    height: 80vh;
   }
 
   .subdiv-hero {
@@ -384,8 +397,7 @@ p {
 
   .first-bento {
     z-index: 3;
-    width: 20rem;
-    animation: 2s ease 0s 1 fadeIn;
+    animation: 1s ease 0s 1 fadeIn;
   }
 
   .second-bento {
@@ -400,6 +412,7 @@ p {
   .fourth-bento {
     display: none;
   }
+
 
   .subdiv-hero-right {
     display: none;
@@ -437,7 +450,46 @@ p {
   }
 
   .maindiv-aboutme p {
-    font-size: .9rem;
+    font-size: 1.1rem;
+    text-align: justify;
   }
+
+  .subdiv-aboutme-sub {
+    width: 100%;
+  }
+
+  .bento-skills-elements img {
+    max-width: 10rem;
+    object-fit: contain;
+    height: 100%;
+  }
+
+  .subdiv-aboutme-sub img {
+    object-fit: cover;
+    height: 10rem;
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+
+  .navbar {
+    max-height: 10vh;
+  }
+  .maindiv-aboutme{
+    max-height: 90vh;
+  }
+  .maindiv-contact{
+    max-height: 90vh;
+  }
+  .maindiv-hero{
+    max-height: 90vh;
+  }
+  .skills-maindiv{
+    max-height:80vh;
+    display: flex;
+    align-items: center;
+  }
+
+
 
 }
